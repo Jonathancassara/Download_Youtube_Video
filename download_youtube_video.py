@@ -89,8 +89,8 @@ url_entry.grid(row=0, column=1, padx=10, pady=10)
 
 # Sélection de la résolution
 tk.Label(root, text="Sélectionnez la résolution:").grid(row=1, column=0, padx=10, pady=10)
-resolution_var = tk.StringVar(value="720p")
-resolution_menu = ttk.Combobox(root, textvariable=resolution_var, values=["720p", "1080p", "4k"])
+resolution_var = tk.StringVar(value="1080p")
+resolution_menu = ttk.Combobox(root, textvariable=resolution_var, values=["1080p", "720p", "4k"], state="readonly")
 resolution_menu.grid(row=1, column=1, padx=10, pady=10)
 
 # Option pour télécharger une playlist
